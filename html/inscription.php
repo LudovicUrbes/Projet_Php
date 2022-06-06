@@ -6,17 +6,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inscription.css" />
 </head>
 <body>
-    <h1>Inscription<h1>
+    <h1 class="noir">Inscription<h1> 
      
-        <form method="post" action="">
-            <p>Username</p>
+        <form method="post" action="inscription.php">
+            <p>________________________</p>
+            <p>Nom d'utilisateur</p>
             <input type="text" name="username">
-            <p>Password</p>
+            <p>________________________</p>
+            <p>Mot de passe</p>
             <input type="password" name="password">
-            <p>Répetez votre password</p>
+            <p>________________________</p>
+            <p>Répetez votre mot de passe</p>
             <input type="password" name="repeatpassword"><br><br>
             <input type="submit" name="submit" value="Valider">
         </form>
@@ -38,16 +41,15 @@
                             'password' => $_POST['password']
                         ]);
                     mysqli_close($pdo);
-                    echo "L'utilisateur a bien été créé vous pouvez désormais vous connecter \n";
                     sleep(2);
                     header('Location: /login.php');
                     die();
                     }
-                    else echo "Les mots de passe ne sont pas identiques";
+                    else echo '<span style="color:#000000;"> <big> Les mots de passe ne sont pas identiques </big> </span>';
                 }
-                else echo "Le mot de passe est trop court !";
+                else echo '<span style="color:#000000;"> <big> Le mot de passe est trop court ! </big> </span>';
             }
-            else echo "Veuillez saisir tous les champs !";
+            else echo '<span style="color:#000000;"> <big> Veuillez saisir tous les champs ! </big> </span>';
         }
     ?>
 

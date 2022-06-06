@@ -35,11 +35,12 @@
                 }?>
 
                 <?php if(isset($_SESSION['logon']) && $_SESSION['logon'] === true): ?> 
-                    Bienvenue sur Quizz R&T :<br> <br>
-                    Votre nom d'utilisateur est <?php echo $_SESSION['username'] ?>. <br>
-                    A vous de jouez pour devenir le plus fort :) <br>
-                    Bonne chance !! 
-                    
+                    <p>
+                        Bienvenue sur Quizz R&T :<br> <br>
+                        Votre nom d'utilisateur est <?php echo $_SESSION['username'] ?>. <br>
+                        A vous de jouez pour devenir le plus fort :) <br>
+                        Bonne chance !! 
+                    </p>
                 <?php else: ?>
 
                 <h2>Connexion </h2>

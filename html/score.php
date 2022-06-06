@@ -11,11 +11,11 @@
 <body>
     <?php
         include('../helper/connection.php');
-        $reponse = $pdo->query('SELECT username, score FROM users');
+        $reponse = $pdo->query("SELECT username, score FROM users WHERE is_published= 1 ORDER BY score DESC");
         while ($donnees = $reponse->fetch())
     {
-        echo $donnees['username'] . '<br />';
-        echo $donnees['score'] . '<br />';
+        echo '<span style="color:#FFFFFF;"> <big> Utilisateur : '.$donnees['username'] . ' </big> </span> <br/>';
+        echo '<span style="color:#FFFFFF;"> <big> Score : '.$donnees['score'] . ' </big> </span> <br/> <br/>';
     }
     $reponse->closeCursor();
     ?>

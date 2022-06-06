@@ -7,13 +7,12 @@ CREATE TABLE users (
 	`password` VARCHAR(250) NOT NULL,
 	`role` VARCHAR(20) NOT NULL default "users",
 	`score` INT NOT NULL default 0,
+	`is_published` INT NOT NULL default 1,
 	PRIMARY KEY (`id`),
 	UNIQUE (`username`)
 ) ENGINE=InnoDB;
 
-INSERT INTO `users` (`username`, `password`, `role`, `score`) VALUES ("root", "gtrnet", "admin", 0);
-INSERT INTO `users` (`username`, `password`, `role`, `score`) VALUES ("HOUESSOU", "azerty", "users", 0);
-
+INSERT INTO `users` (`username`, `password`, `role`, `is_published`) VALUES ("root", "gtrnet", "admin", 0);
 
 CREATE TABLE questions (
 	`id` INT NOT NULL AUTO_INCREMENT,
