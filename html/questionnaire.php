@@ -6,10 +6,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="questionnaire.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <br>
+        <ul id="href">
+            <l>
+                <a style="color:#000000;" href="#Q1"> | Question 1 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q2"> | Question 2 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q3"> | Question 3 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q4"> | Question 4 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q5">| Question 5 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q6">| Question 6 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q7">| Question 7 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q8">| Question 8 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q9">| Question 9 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q10">| Question 10 |</a>
+            </l> 
+            <l>
+                <a style="color:#000000;" href="#Q11">| Question 11 |</a>
+            </l> <br/>
+            <l>
+                <a style="color:#000000;" href="#Q12">| Question 12 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q13">| Question 13 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q14">| Question 14 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q15">| Question 15 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q16">| Question 16 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q17">| Question 17 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q18">| Question 18 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q19">| Question 19 |</a>
+            </l>
+            <l>
+                <a style="color:#000000;" href="#Q20">| Question 20 |</a>
+            </l>
+        </ul>
+        <p id="Q1">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
         <form method="post" action="questionnaire.php">
             <?php 
                 include('../helper/connection.php');
@@ -17,10 +81,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°1 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -61,7 +125,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q2">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -71,10 +135,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°2 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -114,7 +178,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q3">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -124,10 +188,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°3 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -166,7 +230,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q4">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -176,10 +240,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°4 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -220,7 +284,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q5">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -230,10 +294,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°5 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -274,7 +338,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q6">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -284,10 +348,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°6 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -326,7 +390,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q7">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -336,10 +400,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°7 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -379,7 +443,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q8">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -389,10 +453,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°8 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -433,7 +497,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q9">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -443,10 +507,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°9 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -485,7 +549,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q10">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -495,10 +559,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°10 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -539,7 +603,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q11">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -549,10 +613,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°11 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -594,7 +658,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q12">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -604,10 +668,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°12 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -646,7 +710,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q13">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -656,10 +720,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°13 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -699,7 +763,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q14">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -709,10 +773,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°14 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -752,7 +816,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q15">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -762,10 +826,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°15 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -804,7 +868,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q16">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -814,10 +878,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°16 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -856,7 +920,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q17">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -866,10 +930,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°17 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -909,7 +973,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q18">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -919,10 +983,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°18 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -962,7 +1026,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q19">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -972,10 +1036,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°19 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -1014,7 +1078,7 @@
         </form>
 
         <br>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+        <p id="Q20">______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
         <br>
 
         <form method="post" action="questionnaire.php">
@@ -1024,10 +1088,10 @@
                 while ($donnees = $reponse->fetch())
                 {
                     echo '<span style="color:#000000;"> <big> <big> Question n°20 : '.$donnees['question']. '</big> </big> </span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°1 -->'.$donnees['prop1']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°2 -->'.$donnees['prop2']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°3 -->'.$donnees['prop3']. '</span> <br/> <br/>';
-                    echo '<span style="color:#FFFFFF;"> Proposition n°4 -->'.$donnees['prop4']. '</span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°1 --> '.$donnees['prop1']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°2 --> '.$donnees['prop2']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°3 --> '.$donnees['prop3']. '</big> </span> <br/> <br/>';
+                    echo '<span style="color:#FFFFFF;"> <big> Proposition n°4 --> '.$donnees['prop4']. '</big> </span> <br/> <br/>';
                 }
             ?>
                 <p> <big> <big> Choisissez la bonne réponse : </big> </big> </p>
@@ -1064,6 +1128,122 @@
             ?>
         
         </form>
-        <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
 </body>
 </html>
+
+<style>
+
+body {
+    background-color: #390380;
+    font-family: Arial, monospace;
+}
+
+div:first-of-type {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+  
+label {
+    margin-right: 15px;
+    line-height: 32px;
+    color: white;
+}
+  
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+}
+  
+input:checked {
+    border: 6px solid black;
+}
+  
+button,
+legend {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 0;
+    font-size: 14px;
+}
+  
+button:hover,
+button:focus {
+    color: #999;
+}
+  
+button:active {
+    background-color: white;
+    color: black;
+    outline: 1px solid black;
+}
+
+label, p {
+    color :white;
+}
+
+form>p {
+    color :black;
+}
+
+button {
+    margin-bottom: 18px;
+}
+
+#noir {
+    color: black;
+    margin-left: 20px;
+}
+
+ul>l {
+    font-size: x-large;
+}
+
+input {
+    margin-bottom: 2%;
+}
+
+#href {
+    text-align: center;
+    background-color : lightgray;
+    border : solid 2px black;
+    border-radius: 30px;
+    width : 95%;
+    padding-left : 2%;
+    padding-bottom : 1%;
+    padding-top : 1%;
+    margin-left: 2%;
+}
+
+form {
+    margin-left: 2%;
+    background-color: #cb4596;
+    border-radius: 30px;
+    width : 95%;
+    height : 625px;
+    padding-left : 2%;
+    padding-top : 2%;
+    border : solid 2px white;
+}
+
+ul {
+    background-color : #04c4c1;
+    border : solid 2px white;
+}
+
+</style>
+

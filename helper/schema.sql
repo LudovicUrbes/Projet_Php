@@ -12,7 +12,7 @@ CREATE TABLE users (
 	UNIQUE (`username`)
 ) ENGINE=InnoDB;
 
-INSERT INTO `users` (`username`, `password`, `role`, `is_published`) VALUES ("root", "gtrnet", "admin", 0);
+INSERT INTO `users` (`username`, `password`, `role`, `is_published`) VALUES ("root", "f924f1d0cd508d9a22863d71e5c4172b", "admin", 0);
 
 CREATE TABLE questions (
 	`id` INT NOT NULL AUTO_INCREMENT,
